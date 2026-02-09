@@ -1,4 +1,4 @@
-const RENTAL_API = "http://localhost:8080/api/rentals";
+const RENTAL_API = "https://cinevault-app.onrender.com/api/rentals";
 
 document.addEventListener('DOMContentLoaded', fetchMyRentals);
 

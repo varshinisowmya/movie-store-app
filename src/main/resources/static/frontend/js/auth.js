@@ -1,4 +1,4 @@
-const BASE_AUTH_URL = "http://localhost:8080/api/auth";
+const BASE_AUTH_URL = "https://cinevault-app.onrender.com/api/auth";
 
 // Function to show "Toast" messages
 function showToast(message, isError = false) {

@@ -1,4 +1,4 @@
-const MOVIES_API = "http://localhost:8080/api/movies";
+const MOVIES_API = "https://cinevault-app.onrender.com/api/movies";
 
 document.addEventListener('DOMContentLoaded', fetchMovies);
 

@@ -1,4 +1,4 @@
-const NOTE_API = "http://localhost:8080/api/notifications";
+const NOTE_API = "https://cinevault-app.onrender.com/api/notifications";
 
 document.addEventListener('DOMContentLoaded', fetchNotifications);
 
