@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join CineVault</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="auth-container">
+  <div class="auth-form glass-card">
+    <h1 class="logo">CINEVAULT</h1>
+    <h2 style="margin: 1rem 0 2rem 0;">Create Account</h2>
+
+    <form id="registerForm">
+      <div class="input-group">
+        <label>Username</label>
+        <input type="text" id="reg-username" placeholder="Choose a username" required>
+      </div>
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" id="reg-password" placeholder="••••••••" required>
+      </div>
+      <div class="input-group">
+        <label>Account Type</label>
+        <select id="reg-role" class="glass-card" style="width:100%; padding:10px; color:white; background:rgba(255,255,255,0.1); border:none; border-radius:10px;">
+          <option value="USER">User</option>
+          <option value="ADMIN">Admin</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;">Register Now</button>
+    </form>
+    <p style="margin-top: 2rem; color: var(--text-dim);">
+      Already have an account? <a href="login.html" style="color: var(--neon-pink); text-decoration: none;">Login here</a>
+    </p>
+  </div>
+</div>
+<div id="toast" class="glass-card"></div>
+<script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineVault | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<nav>
+  <div class="logo">CINEVAULT</div>
+  <ul class="nav-links">
+    <li>
+      <a href="notifications.html" style="position: relative;">
+        <i class="fas fa-bell"></i>
+        <span id="note-dot" style="display:none; position:absolute; top:-5px; right:-10px; background:red; width:10px; height:10px; border-radius:50%;"></span>
+      </a>
+    </li>
+    <li><a href="index.html" style="color: white;">Home</a></li>
+    <li><a href="dashboard.html">My Rentals</a></li>
+    <li><a href="admin.html">Admin</a></li>
+    <li><span id="user-display" style="color: var(--neon-cyan);"></span></li>
+    <li><a href="#" onclick="logout()" class="btn btn-primary" style="padding: 0.5rem 1rem;">Logout</a></li>
+  </ul>
+</nav>
+
+<div class="container" style="padding: 3rem 8%;">
+  <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Explore Movies</h1>
+  <p style="color: var(--text-dim); margin-bottom: 3rem;">Premium hand-picked collection just for you.</p>
+
+  <div id="movie-grid" class="movie-grid">
+  </div>
+</div>
+
+<div id="toast" class="glass-card"></div>
+<script src="js/movies.js"></script>
+<script>
+  // Quick check to see if user is logged in
+  const user = localStorage.getItem("user");
+  if(user) document.getElementById('user-display').innerText = "Hi, " + user;
+
+  function logout() {
+    localStorage.clear();
+    window.location.href = "login.html";
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><title>My Dashboard | CineVault</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+  <div class="logo">CINEVAULT</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="dashboard.html" style="color:white">My Rentals</a></li>
+    <li><a href="#" onclick="logout()" class="btn btn-primary">Logout</a></li>
+  </ul>
+</nav>
+
+<div class="container" style="padding: 3rem 8%;">
+  <h1 style="margin-bottom: 2rem;">My Rental History</h1>
+
+  <div class="glass-card" style="padding: 2rem; overflow-x: auto;">
+    <table>
+      <thead>
+      <tr>
+        <th>Movie</th>
+        <th>Rental Date</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody id="rental-table-body">
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script src="js/rentals.js"></script>
+</body>
+</html>
